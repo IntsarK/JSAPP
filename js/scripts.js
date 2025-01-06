@@ -1,17 +1,17 @@
 let pokemonList [
      {
-          name:
-          height:
-          type:    
+          name: 'Butterfree',
+          height: 1.1m,
+          type: ['Bug','Flying'] 
      },
      {
-          name:
-          height:
-          type: 
+          name:'Wigglytuff',
+          height: 1m,
+          type: ['Fairy','Normal']
      },
      {
-          name:
-          height:
-          type: 
+          name: 'Mewtwo',
+          height: 2m,
+          type: ['Psychic']
      }
 ]
