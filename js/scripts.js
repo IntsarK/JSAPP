@@ -1,17 +1,17 @@
-let pokemonList [
+let pokemonList = [
      {
-          name: 'Butterfree',
-          height: 1.1m,
-          type: ['Bug','Flying'] 
+          name: "Butterfree",
+          height: 1.1,
+          type: ["Bug", "Flying"], 
      },
      {
-          name:'Wigglytuff',
-          height: 1m,
-          type: ['Fairy','Normal']
+          name:"Wigglytuff",
+          height: 1,
+          type: ["Fairy", "Normal"],
      },
      {
-          name: 'Mewtwo',
-          height: 2m,
-          type: ['Psychic']
-     }
-]
+          name: "Mewtwo",
+          height: 2,
+          type: ["Psychic"],
+     },
+];
