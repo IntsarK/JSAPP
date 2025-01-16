@@ -1,4 +1,5 @@
-let pokemonList = [
+let pokemonRepository = (function(){
+     let pokemonList = [
      {
           name: "Butterfree",
           height: 1.1,
@@ -14,9 +15,25 @@ let pokemonList = [
           height: 2,
           type: ["Psychic"],
      },
-];
+     ];
 
-pokemonList.forEach(function(pokemon){
+     function getAll() {
+          return pokemonList;
+     }
+     function add(pokemon){
+          pokemonList.push(pokemon);
+     }
+
+     return {
+          getAll: getAll,
+          add: add,
+     };
+})();
+
+
+
+
+pokemonRepository.getAll().forEach(function(pokemon){
      let message = pokemon.name + " (height: " + pokemon.height + ")";
    
 
