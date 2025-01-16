@@ -16,14 +16,14 @@ let pokemonList = [
      },
 ];
 
-for (let i = 0; i < pokemonList.length; i++) {
-     let message = pokemonList[i].name + " (height: " + pokemonList[i].height + ")";
+pokemonList.forEach(function(pokemon){
+     let message = pokemon.name + " (height: " + pokemon.height + ")";
    
 
-     if (pokemonList[i].height > 1.1) {
-       message += " - Wow, that’s big!";
+     if (pokemon.height > 1.1) {
+       message += " Wow, that’s big!";
      }
 
   document.write(message + "<br>");
-}
+});
 
