@@ -1,4 +1,4 @@
-let pokemonRepository = (function(){
+let pokemonRepository = (function () {
      let pokemonList = [
      {
           name: "Butterfree",
@@ -20,17 +20,32 @@ let pokemonRepository = (function(){
      function getAll() {
           return pokemonList;
      }
-     function add(pokemon){
-          pokemonList.push(pokemon);
-     }
 
+     function add(pokemon) {
+          if (
+               typeof pokemon === "object" &&
+               Object.keys(pokemon).length === 3 && 
+               Object.keys(pokemon).every((key) =>
+                 ["name", "height", "type"].includes(key)
+          )
+          ) {
+               pokemonList.push(pokemon); 
+             } else  {
+                console.error("Invalid Pokémon object!");
+  }
+}
+
+function find(name){
+     return pokemonList.filter(
+          pokemon => pokemon.name.tolowCase() === name.tolowCase()
+     );
+}
      return {
           getAll: getAll,
           add: add,
+          find: find,
      };
 })();
-
-
 
 
 pokemonRepository.getAll().forEach(function(pokemon){
