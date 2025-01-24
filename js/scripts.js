@@ -47,9 +47,10 @@ let pokemonRepository = (function () {
     let button = document.createElement("button");
     button.innerText = pokemon.name;
     button.classList.add("button-class");
-    listItem.appendChild(button);
+    listpokemon.appendChild(button);
     pokemonList.appendChild(listpokemon);
   }
+
   return {
     getAll: getAll,
     add: add,
