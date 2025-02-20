@@ -6,7 +6,7 @@
     text-align: center;
     text-decoration: none;
     display: block;
-    font-size: 25px;
+    font-size: 40px;
     width: 50%;
     margin: 3px auto;
     cursor: pointer;
@@ -15,7 +15,7 @@
 }
 
 .header {
-    font-size: 30px;
+    font-size: 50px;
     font-weight: bold;
     text-align: center;
     background-color: #FFDAB9;
