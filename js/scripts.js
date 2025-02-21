@@ -103,10 +103,6 @@ let pokemonRepository = (function () {
   function hideModal() {
     let modalContainer = document.querySelector("#modal-container");
     modalContainer.classList.remove("is-visible");
-
-    if (dialogPromiseReject) {
-      dialogPromiseReject();
-      dialogPromiseReject = null;
     }
   }
 
